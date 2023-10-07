@@ -1,0 +1,153 @@
+#testimonial {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    padding-top: 50px;
+}
+
+#testimonial .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonial .slick-dots li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#testimonial .slick-dots li.slick-active button {
+    background-color: #000000;
+}
+
+
+.testimonial-slide {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.testimonial-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.quote-icon {
+    font-size: 120px;
+    color: #b7b2ab;
+    margin-top: 10px;
+}
+
+.icon-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.video-container {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.testimonial-slide i {
+    color: #c5aa85;
+}
+
+/* Testimonial Section Responsive Styles */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    #testimonial {
+        flex-direction: column-reverse;
+    }
+
+    #testimonial .slick-dots {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+        transform: translateX(-27%);
+    }
+
+    #testimonial .slick-dots li {
+        margin: 0 5px;
+    }
+
+    .testimonial-slide {
+        padding: 10px;
+        max-width: 50%;
+        transform: translateX(-55%);
+    }
+
+    .testimonial-content {
+        padding: 0;
+    }
+
+    .testimonial-image {
+        width: 100px;
+        height: 100px;
+        margin-top: 5px;
+    }
+
+    .testimonial-name {
+        font-size: 20px;
+    }
+
+    .quote-icon {
+        font-size: 60px;
+    }
+
+    .testimonial-quote {
+        font-size: 14px;
+    }
+
+    .video-container {
+        margin-top: 20px;
+    }
+
+    .testimonial-slide i {
+        font-size: 24px;
+    }
+}

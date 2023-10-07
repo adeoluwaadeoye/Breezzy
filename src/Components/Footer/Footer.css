@@ -1,0 +1,197 @@
+.footer-container {
+    background-color: #444;
+    color: #c5aa85;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 1200px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 30px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    color: #c5aa85;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #999;
+}
+
+/* Newsletter Form */
+.footer .newsletter-form {
+    margin-top: 10px;
+}
+
+.footer .newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Information Section */
+.information ul {
+    padding: 0;
+}
+
+.information ul li {
+    margin-bottom: 10px;
+}
+
+.information ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.footer .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .contact p a {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.footer .contact i {
+    margin-right: 10px;
+    color: #c5aa85;
+    font-size: 1.2rem;
+}
+
+/* Footer Divider */
+.footer-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #c5aa85;
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.footer .contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #999;
+    display: flex;
+}
+
+.footer .contact i {
+    margin-right: 10px;
+    color: #999;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #c5aa85;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: left;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    color: #c5aa85;
+}
+
+.footer-bottom p {
+    text-align: left;
+    color: #999;
+}
+
+/* Responsive Styles for Footer Section */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        text-align: left;
+        padding: 20px;
+        flex: 1;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+        white-space: wrap;
+    }
+
+    .newsletter {
+        display: flex;
+        align-self: flex-start;
+        display: none;
+
+    }
+
+    .information ul li a {
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: start;
+        text-align: left;
+    }
+
+    .contact .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .contact .contact p a {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .contact .contact i {
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+
+    .footer-divider {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        text-align: left;
+        padding-top: 10px;
+        flex: 1;
+    }
+}

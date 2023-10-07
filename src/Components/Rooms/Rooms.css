@@ -1,0 +1,219 @@
+#rooms {
+    padding-top: 80px;
+    max-height: 100vh;
+}
+
+.slick-slider {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+    padding: 20px;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+.slick-slide:hover img {
+    transform: scale(1.1);
+}
+
+.slick-slide h3 {
+    font-size: 15px;
+    color: #373737;
+    margin: 5px;
+}
+
+.slick-slide p {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.slick-dots li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #000000;
+}
+
+.slide-text {
+    transform: translateY(-100px);
+    text-align: left;
+    background-color: hsla(0, 0%, 100%, 0.666);
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.slide-text-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #cbcbcb;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #c5aa85;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+    padding: 20px;
+    gap: 10px;
+    transform: translateX(2190%);
+}
+
+.prev-arrow {
+    left: 0;
+    position: relative;
+    margin-left: 18px;
+}
+
+.next-arrow {
+    left: 70px;
+    margin-left: 18px;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    background-color: #000000;
+}
+
+.rooms-text {
+    max-width: 500px;
+    padding: 40px;
+    margin-left: 125px;
+}
+
+
+.rooms-text .mini-heading {
+    color: #c5aa85;
+    padding: 0;
+    margin: 0;
+    transform: translateY(80px);
+}
+
+.description h2,
+.description p {
+    transform: translateY(80px);
+    padding-top: 10px;
+}
+
+.description h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust padding and font size for smaller screens */
+    #rooms {
+        padding-top: 55px;
+    }
+
+    .slick-slide img {
+        max-width: 150px;
+        min-height: 100px;
+        border-radius: 5px;
+        transition: .5s ease-in-out;
+    }
+
+    .slick-slider {
+        max-width: 1000px;
+    }
+
+    .slide-text {
+        display: none;
+    }
+
+
+    .slick-slide h3 {
+        font-size: 14px;
+        display: none;
+    }
+
+    .slick-slide p {
+        font-size: 13px;
+    }
+
+    .slick-dots {
+        bottom: 5px;
+    }
+
+    .slick-dots li {
+        margin: 0 5px;
+    }
+
+    .slick-dots li button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .slide-text {
+        transform: translateY(-100px);
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .slide-text-inner {
+        flex-direction: column;
+    }
+
+    .rooms-text {
+        max-width: 100%;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .rooms-text .mini-heading {
+        transform: translateY(40px);
+    }
+
+    .description h2,
+    .description p {
+        transform: translateY(40px);
+        padding-top: 5px;
+    }
+}

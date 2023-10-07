@@ -1,0 +1,186 @@
+.home {
+    background-color: #f2f2f2;
+}
+
+/* Style for the top section with the image and text */
+.home-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+
+.home-text {
+    flex: 1;
+    padding: 40px;
+}
+
+
+.home-welcome-heading-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Mooli', sans-serif;
+}
+
+.home-welcome-text p {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* Style for the buttons */
+.home-btn {
+    margin-top: 30px;
+}
+
+.hotel-booking-container {
+    transform: translateY(-45px);
+    background-color: #ffffff;
+    align-items: center;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 900px;
+    max-height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input-group i {
+    margin-left: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    appearance: none;
+    background: transparent;
+    text-align: left;
+    color: #6f6f6f;
+}
+
+select::placeholder {
+    text-align: left;
+}
+
+select::selection {
+    background-color: #c5aa85;
+    color: #6f6f6f;
+}
+
+select option {
+    text-align: left;
+    font-family: 'Poppins,' sans-serif;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    caret-color: #c5aa85;
+}
+
+.home-img-b {
+    display: none;
+}
+
+
+.book-now-button {
+    background-color: #c5aa85;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 80px;
+    height: 130px;
+    margin-left: 10px;
+    align-self: start;
+    white-space: nowrap;
+    transition: .3s ease;
+    font-weight: bold;
+}
+
+.book-now-button:hover {
+    background-color: #6f6f6f;
+    color: #ccc;
+}
+
+.home-image {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-img img {
+        display: none;
+    }
+
+    .home-text {
+        text-align: justify;
+    }
+
+    .home-text .home-img  {
+        display: block;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .home-btn {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .hotel-booking-container {
+        display: none;
+    }
+    .home-image   {
+        display: block;
+        width: 150px;
+        margin-right: 100px;
+        padding: 20px;
+    }
+
+    .home-image img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
